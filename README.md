@@ -1,5 +1,5 @@
 # Reactive-Pusher
-This project us a simple RxJava wrapper for the Pusher Java Library, allowing you to use Pusher in your Android applications keeping your reactive workflow in place 🙌🏻
+This project us a simple RxJava wrapper for the [Pusher](https://pusher.com/) Java Library, allowing you to use Pusher in your Android applications keeping your reactive workflow in place 🙌🏻
 
 # Functionality
 
