@@ -167,6 +167,13 @@ class ReactivePusher {
         })
     }
 
+    fun unsubscribeFromChannel(channelName: String): Completable {
+        return Completable.defer {
+            pusher.unsubscribe(channelName)
+            Completable.complete()
+        }
+    }
+
     fun subscribeToChannel(channelName: String, vararg events: String): Flowable<ChannelEvent> {
         return Flowable.create({
             pusher.subscribe(channelName, object : ChannelEventListener {
