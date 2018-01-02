@@ -38,7 +38,7 @@ class ReactivePusher {
                     it.onNext(mapConnectionState(connectionStateChange.currentState))
                 }
 
-                override fun onError(message: String, code: String?, exception: Exception) {
+                override fun onError(message: String?, code: String?, exception: Exception?) {
                     it.onError(ConnectionError(message, code, exception))
                 }
             })
